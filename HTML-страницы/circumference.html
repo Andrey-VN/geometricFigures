@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+	<title>Калькулятор</title>
+</head>
+<body>
+	<header>
+		<p>Калькулятор</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index2.html">Главная</a>
+			<li class="selected"><a href="../index.html" >Плоские фигуры</a>
+			<li><a href="">Объемные фигуры</a>
+		</ul>
+	</nav>
+	<div id="tableContainer">
+		<div class="tableClass" id="tableRow">
+			<section id="menu">
+					<input type="checkbox" id="checkAreaOfFigures" >
+					<label class="bth" for="checkAreaOfFigures">Площадь фигур</label>
+					<ul id="areaOfFigures">
+						<li><a href="areaOfACircle.html">Площадь окружности</a></li>
+						<li><a href="squareArea.html">Площадь квадрата</a></li>
+						<li><a href="areaOfARectangle.html">Площадь прямоугольника</a></li>
+					</ul>
+					<input type="checkbox" id="checkFigurePerimeter" checked>
+					<label class="bth" for="checkFigurePerimeter">Периметр фигур</label>
+					<ul id="figurePerimeter">
+						<li><a href="circumference.html">Длина окружности</a></li>
+						<li>Периметр квадрата</li>
+						<li>Периметр прямоугольника</li>
+					</ul>
+			</section>
+			<section id="main">
+				<article id="findingTheCircumferenceThroughTheRadius" >
+					<h1>Поиск длины окружности через радиус</h1>
+					<img src="../image/circle.jpg">
+					<h2> P = 2&#960r</h2>
+					<form>
+						Радиус окружности (r): <input id="radiusForTheCircumference" type="number" name="radiusForTheCircumference"><br>
+						<input id="submitCircumferenceThroughRadius" type="button" name="submitCircumferenceThroughRadius" value="Вычислить"><br>
+						<output id="circumferenceThroughRadius"></output>
+					</form>
+				</article>
+			</section>
+			<section id="leftMargin">
+				ПРАВО
+			</section>
+		</div>
+	</div>
+	<script src="../JS-плоские_фигуры/circumference.js"></script>	
+</body>
+
+</html>

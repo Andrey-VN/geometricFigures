@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+	<title>Калькулятор</title>
+</head>
+<body>
+	<header>
+		<p>Калькулятор</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index2.html">Главная</a>
+			<li class="selected"><a href="../index.html" >Плоские фигуры</a>
+			<li><a href="">Объемные фигуры</a>
+		</ul>
+	</nav>
+	<div id="tableContainer">
+		<div class="tableClass" id="tableRow">
+			<section id="menu">
+					<input type="checkbox" id="checkAreaOfFigures" checked>
+					<label class="bth" for="checkAreaOfFigures">Площадь фигур</label>
+					<ul id="areaOfFigures">
+						<li><a href="areaOfACircle.html">Площадь окружности</a></li>
+						<li><a href="squareArea.html">Площадь квадрата</a></li>
+						<li><a href="areaOfARectangle.html">Площадь прямоугольника</a></li>
+					</ul>
+					<input type="checkbox" id="checkFigurePerimeter">
+					<label class="bth" for="checkFigurePerimeter">Периметр фигур</label>
+					<ul id="figurePerimeter">
+						<li><a href="circumference.html">Длина окружности</a></li>
+						<li>Периметр квадрата</li>
+						<li>Периметр прямоугольника</li>
+					</ul>
+			</section>
+			<section id="main">
+				<article id="findingTheAreaOfARectangleBySides" >
+					<h1>Поиск площади прямоугольника по сторонам</h1>
+					<img src="../image/circle.jpg">
+					<h2> S = d<sup>2</sup>/2</h2>
+					<form>
+						Сторона прямоугольника (a): <input id="sideAForRectangle" type="number" name="sideAForRectangle"><br>
+						Сторона прямоугольника (b): <input id="sideBForRectangle" type="number" name="sideAForRectangle"><br>
+						<input id="submitTheAreaOfARectangleBySides" type="button" name="submitTheAreaOfARectangleBySides" value="Вычислить"><br>
+						<output id="theAreaOfARectangleBySides"></output>
+					</form>
+				</article>
+			</section>
+			<section id="leftMargin">
+				ПРАВО
+			</section>
+		</div>
+	</div>
+	<script src="../JS-плоские_фигуры/areaOfARectangle.js"></script>	
+</body>
+
+</html>

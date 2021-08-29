@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+	<title>Калькулятор</title>
+</head>
+<body>
+	<header>
+		<p>Калькулятор</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index2.html">Главная</a>
+			<li class="selected"><a href="../index.html" >Плоские фигуры</a>
+			<li><a href="">Объемные фигуры</a>
+		</ul>
+	</nav>
+	<div id="tableContainer">
+		<div class="tableClass" id="tableRow">
+			<section id="menu">
+					<input type="checkbox" id="checkAreaOfFigures" checked>
+					<label class="bth" for="checkAreaOfFigures">Площадь фигур</label>
+					<ul id="areaOfFigures">
+						<li><a href="areaOfACircle.html">Площадь окружности</a></li>
+						<li><a href="squareArea.html">Площадь квадрата</a></li>
+						<li><a href="areaOfARectangle.html">Площадь прямоугольника</a></li>
+					</ul>
+					<input type="checkbox" id="checkFigurePerimeter">
+					<label class="bth" for="checkFigurePerimeter">Периметр фигур</label>
+					<ul id="figurePerimeter">
+						<li><a href="circumference.html">Длина окружности</a></li>
+						<li>Периметр квадрата</li>
+						<li>Периметр прямоугольника</li>
+					</ul>
+			</section>
+			<section id="main">
+				<article id="findingTheAreaOfACircleThroughTheRadius" >
+					<h1>Поиск площади круга через радиус</h1>
+					<img src="../image/circle.jpg">
+					<h2> S = &#960r<sup>2</sup></h2>
+					<form>
+						Радиус окружности (r): <input id="radiusForTheAreaOfACircle" type="number" name="radiusForTheAreaOfACircle"><br>
+						<input id="submitAreaOfACircleThroughRadius" type="button" name="submitAreaOfACircleThroughRadius" value="Вычислить"><br>
+						<output id="areaOfACircleThroughRadius"></output>
+					</form>
+				</article>
+				<article id="findingTheAreaOfACircleUsingTheLengthOfACircle" >
+					<h1>Поиск площади круга через длину окружности</h1>
+					<img src="../image/circle.jpg">
+					<h2> S = P<sup>2</sup>/4&#960</h2>
+					<form>
+						Длина окружности круга (P): <input id="theCircumferenceOfACircleThroughTheArea" type="number" name="findingTheAreaOfACircleThroughTheCircumference"><br>
+						<input id="submitAreaOfACircleInTermsOfTheCircumference" type="button" name="submitAreaOfACircleInTermsOfTheCircumference" value="Вычислить"><br>
+						<output id="areaOfACircleInTermsOfTheCircumference"></output>
+					</form>
+				</article>
+				<article id="findingTheAreaOfACircleThroughDiameter" >
+					<h1>Поиск площади круга через диаметр</h1>
+					<img src="../image/circle.jpg">
+					<h2> S = &#960d<sup>2</sup>/4</h2>
+					<form>
+						Диаметр круга (d): <input id="circleDiameterForAreaSearch" type="number" name="circleDiameterForAreaSearch"><br>
+						<input id="submitAreaOfACircleThroughDiameter" type="button" name="submitAreaOfACircleThroughDiameter" value="Вычислить"><br>
+						<output id="areaOfACircleThroughDiameter"></output>
+					</form>
+				</article>
+			</section>
+			<section id="leftMargin">
+				ПРАВО
+			</section>
+		</div>
+	</div>
+	<script src="../JS-плоские_фигуры/areaOfACircle.js"></script>	
+</body>
+
+</html>
